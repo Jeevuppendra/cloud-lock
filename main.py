@@ -10,6 +10,17 @@ import secrets
 
 app = FastAPI(title="Cloud Lock Demo API", version="1.0")
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # for demo
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 # ----------------------------
 # DEMO SECURITY KEYS (change these!)
 # ----------------------------
