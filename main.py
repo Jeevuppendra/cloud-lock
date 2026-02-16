@@ -24,7 +24,7 @@ app.add_middleware(
 # ----------------------------
 # DEMO SECURITY KEYS (change these!)
 # ----------------------------
-ADMIN_API_KEY = "CHANGE_ME_ADMIN_KEY_12345"   # used by web/phone to trigger unlock
+ADMIN_API_KEY = "ded"   # used by web/phone to trigger unlock
 DEVICE_KEYS = {                               # used by ESP32
     "lock1": "CHANGE_ME_DEVICE_KEY_LOCK1"
 }
